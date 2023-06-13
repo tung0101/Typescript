@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bài 1</title>
+    <!-- json-server -w db.json -p 3000 -->
+  </head>
+  <body>
+    <h3 style="text-align: center;">Nguyễn Doãn Tùng - PS21572</h3>
+    <h1 style="text-align: center;">Danh sách học sinh</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Số thứ tự</th>
+          <th>Tên</th>
+          <th>Điểm toán</th>
+          <th>Điểm văn</th>
+          <th>Điểm trung bình</th>
+        </tr>
+      </thead>
+      <tbody id="student-list"></tbody>
+    </table>
+    <script src="./dist/js/index1.js"></script>
+  </body>
+</html>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.5em;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: darkslategray;
+      font-weight: bold;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: darkgrey;
+    }
+  </style>
+
+

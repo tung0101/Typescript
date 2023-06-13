@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "puclic/js",
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "ES2022",
+  }
+}

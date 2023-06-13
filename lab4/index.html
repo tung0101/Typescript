@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<style>
+  /* Định dạng bảng giỏ hàng */
+#divCart table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Định dạng tiêu đề cột */
+#divCart th {
+  font-weight: bold;
+  background-color: darkgray;
+  padding: 10px;
+}
+
+/* Định dạng nội dung cột */
+#divCart td {
+  padding: 10px;
+}
+
+/* Định dạng phần tử tên sản phẩm */
+#divCart td.tensp {
+  font-weight: bold;
+}
+
+/* Định dạng phần tử giá */
+#divCart td.gia {
+  font-style: italic;
+}
+
+/* Định dạng phần tử số lượng */
+#divCart td.soluong {
+  font-weight: bold;
+  color: blue;
+}
+
+/* Định dạng phần tử thành tiền */
+#divCart td.thanhtien {
+  font-weight: bold;
+  color: red;
+}
+td img{
+  width: 150px;
+  height: 100px;
+}
+</style>
+
+<body>
+    <div id="divCart">
+        <h2 style="text-align: center;">Giỏ hàng</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Số thứ tự</th>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody id="cart">
+            <!-- Thông tin giỏ hàng sẽ được thêm vào đây -->
+          </tbody>
+        </table>
+      </div>
+      
+</body>
+<script src="./public/js/bai1.js"></script>
+</html>

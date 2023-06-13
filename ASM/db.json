@@ -1,0 +1,54 @@
+{
+  "hinh": [
+    {
+      "id": 1,
+      "url": "1.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    },
+    {
+      "id": 2,
+      "url": "2.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    },
+    {
+      "id": 3,
+      "url": "3.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    },
+    {
+      "id": 4,
+      "url": "4.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    },
+    {
+      "id": 5,
+      "url": "5.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    },
+    {
+      "id": 6,
+      "url": "6.jpg",
+      "level": 1,
+      "ten": "san hô",
+      "mota": ""
+    }
+  ],
+  "choi": [
+    {
+      "ten": "tung",
+      "diem": -3,
+      "thoidiem": "2023-04-11T09:47:36.188Z",
+      "id": 1
+    }
+  ]
+}

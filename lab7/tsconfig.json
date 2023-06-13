@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/js",
+    "target": "ES2022",                                  
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    // "watch": true,
+  }
+}

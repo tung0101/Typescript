@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="max-age=3600, must-revalidate" />
+    <meta http-equiv="expires" content="Wed, 24 Mar 2023 09:00:00 GMT" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    />
+  </head>
+  <body>
+    <div class="h-screen bg-blue-700 px-3 py-16">
+      <div class="max-w-md mx-auto bg-white p-3 rounded">
+        <form id="login-form" action="" name="frm">
+          <div class="px-3 py-5" name="frm1">
+            <div class="text-center">
+              <h1 class="text-2xl mb-4">Chào Mừng Bạn Đến Với Trò Chơi</h1>
+            </div>
+
+            <div class="mt-5">
+              <hr class="h-0.5 mt-3" />
+              <div class="relative py-4 flex justify-center">
+                <span class="absolute px-4 rounded -top-4 left-30 bg-white"
+                  >Đăng nhập</span
+                >
+              </div>
+            </div>
+
+            <div class="relative mb-3">
+              <span class="ml-2 bg-white px-2 absolute -top-3 text-sm"
+                >Tên</span
+              >
+              <input
+                class="transition duration-500 border h-12 rounded w-full px-2 mb-2"
+                id="name"
+                require
+                type="text"
+                name="name"
+              />
+            </div>
+            
+            <div class="relative mb-3">
+              <span class="ml-2 bg-white px-2 absolute -top-3 text-sm"
+                >Mật Khẩu</span
+              >
+              <input
+                class="transition duration-500 border h-12 rounded w-full px-2 mb-2"
+                id="password"
+                require
+                type="password"
+                name="matkhau"
+              />
+            </div>
+            <button
+              class="h-12 w-full hover:bg-red-800 bg-red-700 rounded text-white mb-3"
+              type="submit"
+              id="login"
+              name="btn"
+              onclick="log()"
+            >
+            Đăng Nhập
+            </button>
+          </div>
+        </form>
+
+        <script src="public/js/app.js"></script>
+      </div>
+      <script>
+       let hoten = sessionStorage.setItem('hoten', 'tung')
+        let trueName = sessionStorage.getItem('hoten')
+
+        let matkhau = sessionStorage.setItem('matkhau', '123')
+        let truePass = sessionStorage.getItem('matkhau')
+        
+        const log = () => {
+            var name = document.getElementById('name').value;
+            var password = document.getElementById('password').value;
+            if (name == trueName && password == truePass) {
+                    document.location.href  = 'index.html'
+                    // document.getElementById('name').innerHTML = trueName
+                    // alert('Đăng nhập thành công');
+                
+            }else{
+                alert('Đăng nhập thất bại');
+                location.reload();
+            }
+        }
+      </script>
+    </div>
+  </body>
+</html>

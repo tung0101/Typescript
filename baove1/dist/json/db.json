@@ -1,0 +1,10 @@
+{
+  "people": [
+    { "id": 1, "hoten": "Hứa Đi Anh", "tuoi": 18, "phai": false },
+    { "id": 2, "hoten": "Đào Kho Báu", "tuoi": 49, "phai": true },
+    { "id": 3, "hoten": "Đào Được Vàng", "tuoi": 37, "phai": true },
+    { "id": 4, "hoten": "Mai Đi Nhé", "tuoi": 21, "phai": false },
+    { "id": 5, "hoten": "Phạm Kỷ Luật", "tuoi": 45, "phai": true },
+    { "id": 6, "hoten": "Thi Hoài", "tuoi": 70, "phai": false }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 auto;
+      }
+      
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        width: 300px;
+      }
+      
+      th {
+        color: white;
+        background-color: darkgreen;
+      }
+      
+      </style>
+</head>
+<body>
+  <h3 style="text-align: center;">Nguyễn Doãn Tùng - PS21572</h3>
+  <h2 style="text-align: center;">Danh sách học sinh</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Số thứ tự</th>
+            <th>Họ tên</th>
+            <th>Toán</th>
+            <th>Văn</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+      <script type="module" src="./dist/js/bai3.js"></script>
+      <h3 style="text-align: center;">Lấy ra học sinh</h3>
+
+      <div id="result" style="margin-left: 300px;"></div>
+      <script type="module">
+        import { LayHS } from './dist/js/index3.js';
+    
+        const hs = LayHS(1);
+    
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `Học sinh: ${hs.ten} - Toán: ${hs.toan} - Văn: ${hs.van}`;
+      </script>
+</body>
+</html>

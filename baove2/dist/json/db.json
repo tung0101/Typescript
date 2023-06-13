@@ -1,0 +1,10 @@
+{
+  "hocsinh": [
+    { "id": 1, "ten": "Hứa Đi Anh", "toan": 8, "van": 6 },
+    { "id": 2, "ten": "Đào Kho Báu", "toan": 9, "van": 7 },
+    { "id": 3, "ten": "Đào Được Vàng", "toan": 7, "van": 9.5 },
+    { "id": 4, "ten": "Mai Đi Nhé", "toan": 8.5, "van": 8 },
+    { "id": 5, "ten": "Phạm Kỷ Luật", "toan": 4, "van": 9 },
+    { "id": 6, "ten": "Thi Hoài", "toan": 7, "van": 8 }
+  ]
+}

@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-top: 30px;
+}
+
+.container > header {
+  height: 120px;
+}
+
+header h1 {
+  line-height: 90px;
+}
+
+.container > nav {
+  height: 60px;
+}
+
+nav h1 {
+  line-height: 60px;
+}
+
+.container main {
+  height: 300px;
+}
+
+.container > footer {
+  height: 45px;
+}
+
+footer p {
+  line-height: 45px;
+}
+
+#divhinhdep {
+  background-color: AliceBlue;
+  padding: 20 30px;
+}
+
+#divnguoichoi {
+  margin-top: 200px;
+}
+
+#divhinhdep div.hinh {
+  float: left;
+  width: 185px;
+  height: 130px;
+  margin: 5px;
+  border: 1px solid rgb(202, 78, 105);
+}
+
+#divhinhdep div.hinh:hover {
+  cursor: pointer;
+}
+
+#divhinhdep img {
+  width: 100%;
+  height: 100%;
+}
+
+.an {
+  display: none;
+}
+
+.hien {
+  display: block;
+}

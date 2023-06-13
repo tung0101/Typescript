@@ -1,0 +1,20 @@
+{
+    "hinh": [
+     {"id":1,"url":"lan.jpg","level":1,"ten":"Hoa Lan","mota":"" },
+     {"id":2,"url":"anhdao.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     {"id":3,"url":"thiendieu.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     { "id":4,"url":"tigon.jpg","level":1,"ten":"Hoa Lan","mota":"" },
+     {"id":5,"url":"thuocduoc.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     {"id":6,"url":"camtucau.jpg","level":1,"ten":"Hoa Lan","mota":"" },
+     {"id":7,"url":"lan.jpg","level":1,"ten":"Hoa Lan","mota":"" },
+     {"id":8,"url":"anhdao.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     {"id":9,"url":"thiendieu.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     { "id":10,"url":"tigon.jpg","level":1,"ten":"Hoa Lan","mota":"" },
+     {"id":11,"url":"thuocduoc.jpg","level":1,"ten":"Hoa Lan","mota":""},
+     {"id":12,"url":"camtucau.jpg","level":1,"ten":"Hoa Lan","mota":"" }
+    ],
+    "choi": [
+      {"id":1,"hoten":"Tèo","diem":0,"thodiem":"2023-03-30 19:12:8"},
+      {"id":2,"hoten":"Tèo","diem":8,"thodiem":"2023-04-01 9:6:21"}
+    ]
+    }

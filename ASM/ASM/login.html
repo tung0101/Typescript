@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="/ASM/ASM/public/css/dangnhap.css" />
+    <style>
+      body {
+       
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 617px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login">
+      <div class="titulo">Đăng Nhập</div>
+      <input style="margin-bottom: 20px;"
+        type="text"
+        required
+        title="Tên đăng nhập"
+        placeholder="Tên đăng nhập"
+        id="ten"
+        data-icon="U"
+      />
+      <br>
+      <input
+        type="password"
+        required
+        title="Mật khẩu"
+        id="pw"
+        placeholder="Mật khẩu"
+        data-icon="x"
+      />
+      <div class="olvido">
+        <div class="col"><a href="#">Đăng kí</a></div>
+        <div class="col"><a href="#">Quên mật khẩu?</a></div>
+      </div>
+      <div id="loi"></div>
+      <button type="submit" class="enviar" onclick="login()">Submit</button>
+    </section>
+  </body>
+  <script>
+    function login() {
+      const son = document.getElementById("ten").value;
+      localStorage.setItem("hoten", son);
+      if (son != null) { 
+        document.location = "index.html";
+      } else {
+        document.location = "login.html";
+      }
+    }
+  </script>
+</html>

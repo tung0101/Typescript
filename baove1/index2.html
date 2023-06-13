@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Server Test</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Họ tên</th>
+        <th>Tuổi</th>
+        <th>Giới tính</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+    </tbody>
+  </table>
+</body>
+</html>
+
+  <script>
+    fetch('http://localhost:3000/people')
+      .then(response => response.json())
+      .then(data => {
+        const rows = data.map(person => {
+          return `
+            <tr>
+              <td>${person.id}</td>
+              <td>${person.hoten}</td>
+              <td>${person.tuoi}</td>
+              <td>${person.phai ? 'Nữ' : 'Nam'}</td>
+
+            </tr>
+          `
+        }).join('');
+
+        document.querySelector('#data').innerHTML = rows;
+      });
+  </script>
+<style>
+  table {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
